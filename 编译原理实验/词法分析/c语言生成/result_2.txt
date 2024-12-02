@@ -1,0 +1,11 @@
+1 <NUMBER,2.55f>
+2 <IDENTIFIER,ul3>
+3 <ERROR,@>
+4 <IDENTIFIER,sadadadsda>
+5 <IDENTIFIER,AAAA>
+5 <ERROR,'>
+6 <NUMBER,1e3l>
+7 <ERROR,5e>
+7
+0 3 0 0 0 0 2
+3

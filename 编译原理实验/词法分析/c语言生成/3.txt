@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+
+
+int main()
+{
+//   int TableSize = 100; 
+	        int wordcount = 0, length;
+            HashTable H;
+            ElementType word;
+	        FILE *fp;
+    char document[30] = "HarryPotter.txt";
+                             
+
+  H = InitializeTable( TableSize ); 
+
+    if(( fp = fopen(document, "r" )) == NULL)
+                FatalError("hhhhh！\n" );
+                   	
+           	while( !feof( fp ) ){
+       length = GetAWord( fp, word );
+      if(length > 3){     /* 只考虑长度大于3个字符的单词 */
+	         wordcount++;      
+	         InsertAndCount( word, H );
+		       }
+   	        }
+   	        fclose( fp );
+
+   printf('54', wordcount);
+   Show( H, 10.0/100 );  /* 显示词频前10%的所有单词 */
+ DestroyTable( H );    /* 销毁散列表 */
+		   return 0;
+}
